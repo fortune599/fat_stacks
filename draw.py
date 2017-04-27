@@ -19,18 +19,18 @@ def draw_polygons( points, screen, color ):
         Ay = int(points[point+1][1] - points[point][1])
         By = int(points[point+2][1] - points[point][1])
         n = Ax * By - Bx * Ay
-        if n > 0:
-            draw_line( int(points[point][0]),
+        #if n > 0:
+        draw_line( int(points[point][0]),
                        int(points[point][1]),
                        int(points[point+1][0]),
                        int(points[point+1][1]),
                        screen, color)
-            draw_line( int(points[point+2][0]),
+        draw_line( int(points[point+2][0]),
                        int(points[point+2][1]),
                        int(points[point+1][0]),
                        int(points[point+1][1]),
                        screen, color)
-            draw_line( int(points[point][0]),
+        draw_line( int(points[point][0]),
                        int(points[point][1]),
                        int(points[point+2][0]),
                        int(points[point+2][1]),
